@@ -1,15 +1,15 @@
 on: 
- #push: 
-   #branches:
-      #- 'feature'
+ push: 
+   branches:
+      - dev
  pull_request:
     types:
     - closed
     branches:
+      - feature
       - dev
       #- '!qa'
-      #- '!prd'  
-
+      #- '!prd'
 jobs:
  pre-push_hook:
 

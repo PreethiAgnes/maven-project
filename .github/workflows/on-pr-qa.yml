@@ -1,9 +1,12 @@
 on:
+  push:
+    branches:
+      - qa
   pull_request:
     types:
       - closed
     branches:
-      - qa
+      - dev
       
 
 jobs:
