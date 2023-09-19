@@ -4,6 +4,8 @@ on:
       - 'feature'
       - 'dev'
  pull_request:
+    types:
+    - closed
     branches:
       - 'dev'
       - '!qa'
