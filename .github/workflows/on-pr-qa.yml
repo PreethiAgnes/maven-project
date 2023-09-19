@@ -6,9 +6,6 @@ on:
       - qa
       
 
-permissions:
-  id-token: write
-  contents: read
 jobs:
  pre-push_hook:
 
