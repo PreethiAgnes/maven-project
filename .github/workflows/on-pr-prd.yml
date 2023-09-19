@@ -1,9 +1,12 @@
 on:
+  push:
+    branches:
+      - prd
   pull_request:
     types:
       - closed
     branches:
-      - prd
+      - qa
 
       
 jobs:
