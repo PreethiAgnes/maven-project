@@ -9,7 +9,6 @@ on:
       - feature
       - dev
       #- '!qa'
-      #- '!prd'
 jobs:
  pre-push_hook:
 
