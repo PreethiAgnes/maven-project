@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - qa
-     
 
 jobs:
  pre-push_hook:

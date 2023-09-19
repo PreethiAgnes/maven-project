@@ -1,8 +1,7 @@
 on:
   push:
     branches:
-      - prd
-      
+      - prd     
 jobs:
  pre-push_hook:
 
