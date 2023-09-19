@@ -6,10 +6,6 @@ on:
       - prd
 
       
-
-permissions:
-  id-token: write
-  contents: read
 jobs:
  pre-push_hook:
 
