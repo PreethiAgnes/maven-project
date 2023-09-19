@@ -1,12 +1,11 @@
 on: 
  push: 
    branches:
-      - feature
+      - 'feature'
+      - 'dev'
  pull_request:
-    types:
-      - closed
     branches:
-      - '*'
+      - 'dev'
       - '!qa'
       - '!prd'  
 
@@ -84,7 +83,7 @@ jobs:
         #coordinates: groupId=com.example artifactId=app version=1.0.0
         #assets: extension=jar
         #filename: target/*jar-with-dependencies.jar
-        
+
     
    
     - name: Generate SBOM
