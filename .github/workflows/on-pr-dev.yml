@@ -1,15 +1,14 @@
 on: 
- push: 
-   branches:
-      - 'feature'
-      - 'dev'
+ #push: 
+   #branches:
+      #- 'feature'
  pull_request:
     types:
     - closed
     branches:
-      - 'dev'
-      - '!qa'
-      - '!prd'  
+      - dev
+      #- '!qa'
+      #- '!prd'  
 
 permissions:
   id-token: write
