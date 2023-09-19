@@ -5,10 +5,10 @@ on:
  pull_request:
     types:
     - closed
-    branches:
-      - 'dev'
-      - '!qa'
-      - '!prd'  
+    #branches:
+      #- 'dev'
+      #- '!qa'
+      #- '!prd'  
 
 permissions:
   id-token: write
@@ -22,6 +22,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Install Talisman
+      if: github.event.pull_request.base.ref == 'dev'
       run: |
           wget https://github.com/thoughtworks/talisman/releases/latest/download/talisman_linux_amd64 -O talisman
           chmod +x talisman
